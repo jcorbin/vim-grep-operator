@@ -1,0 +1,2 @@
+- refactor to DRY out the git vs non-git version
+- gate git version on whether or not fugitive is even available
