@@ -10,6 +10,7 @@
 "   a natural mapping of grep -f... in fact I'd like to figure out if I can
 "   pass patterns using a filehandle rather than munging them into an
 "   alternation
+" - also has a hacked version that uses fugitive's Ggrep command
 
 nnoremap <leader>* :set operatorfunc=<SID>GrepOperator<cr>g@
 vnoremap <leader>* :<c-u>call <SID>GrepOperator(visualmode(), 1)<cr>
