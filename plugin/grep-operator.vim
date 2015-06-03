@@ -12,8 +12,8 @@
 "   alternation
 " - also has a hacked version that uses fugitive's Ggrep command
 
-nnoremap <leader>* :set operatorfunc=<SID>GrepOperator<cr>g@
-vnoremap <leader>* :<c-u>call <SID>GrepOperator(visualmode(), 1)<cr>
+nnoremap <Plug>GrepOperatorGrep :set operatorfunc=<SID>GrepOperator<cr>g@
+vnoremap <Plug>GrepOperatorVGrep :<c-u>call <SID>GrepOperator(visualmode(), 1)<cr>
 
 function! s:GrepOperator(type, ...)
     let reg_save = @@
@@ -45,8 +45,8 @@ function! s:GrepOperator(type, ...)
     let @@ = reg_save
 endfunction
 
-nnoremap <leader>g* :set operatorfunc=<SID>GitGrepOperator<cr>g@
-vnoremap <leader>g* :<c-u>call <SID>GitGrepOperator(visualmode(), 1)<cr>
+nnoremap <Plug>GrepOperatorGitGrep :set operatorfunc=<SID>GitGrepOperator<cr>g@
+vnoremap <Plug>GrepOperatorVGitGrep :<c-u>call <SID>GitGrepOperator(visualmode(), 1)<cr>
 
 function! s:GitGrepOperator(type, ...)
     let reg_save = @@
