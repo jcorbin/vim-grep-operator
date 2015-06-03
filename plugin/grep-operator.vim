@@ -1,3 +1,7 @@
+" grep-operator.vim - vim grep operator
+" Maintainer: Joshua T Corbin <jcorbin@wunjo.org>
+" Version: 1.0
+
 " natural progression of the grep operator from Learn Vimscript The Hard Way
 " by Steve Losh; major differences:
 " - uses pattern documented in map-operator:
