@@ -1,4 +1,4 @@
-" grep-operator.vim - vim grep operator
+" grep_operator.vim - vim grep operator
 " Maintainer: Joshua T Corbin <jcorbin@wunjo.org>
 " Version: 1.0
 
