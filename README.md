@@ -3,14 +3,6 @@
 Provides an operator for vim's grep functionality, and for fugitive's git-grep
 analog.
 
-You'll need to define mappings in `.vimrc`, e.g.:
-
-```
-nmap <leader>* <Plug>GrepOperatorGrep
-vmap <leader>* <Plug>GrepOperatorVGrep
-nmap <leader>g* <Plug>GrepOperatorGitGrep
-vmap <leader>g* <Plug>GrepOperatorVGitGrep
-```
-
-Then you can do things like `,*aw` to grep for the current word (presuming `set
-mapleader=,`).
+The default mapping puts `:grep` on `<leader>*` and `:Ggrep` on `<leader>g*`.
+So to search for the current token under the cursor, you can use
+`<leader>g*iw`.
