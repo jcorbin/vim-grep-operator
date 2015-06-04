@@ -10,7 +10,7 @@
 " - echos the path being grepped in, makes it a variable in case I can find
 "   some sane way to allow this to be optionally specified by perhaps a
 "   different binding
-" - supports line-wise greppnig to specify multiple patterns; think of this as
+" - supports line-wise grepping to specify multiple patterns; think of this as
 "   a natural mapping of grep -f... in fact I'd like to figure out if I can
 "   pass patterns using a filehandle rather than munging them into an
 "   alternation
